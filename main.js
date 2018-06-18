@@ -33,7 +33,7 @@ function calculateImage(image) {
             var right = getPixel(image, x + 1, y)
             var bottom = getPixel(image, x, y + 1)
 
-            if(Math.abs(top - right) > 40 || Math.abs(top - bottom) > 40)
+            if(Math.abs(top - right) > 30 || Math.abs(top - bottom) > 30)
                 setPixel(newImage, x, y, 0)
         }
     }
